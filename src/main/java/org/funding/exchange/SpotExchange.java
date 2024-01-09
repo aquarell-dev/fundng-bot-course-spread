@@ -10,7 +10,7 @@ public enum SpotExchange {
     public final URI connectionUri;
     public final double takerFee;
 
-    private SpotExchange(String exchangeTitle, String connectionUri, double takerFee) {
+    SpotExchange(String exchangeTitle, String connectionUri, double takerFee) {
         this.exchangeTitle = exchangeTitle;
         this.connectionUri = URI.create(connectionUri);
         this.takerFee = takerFee;
